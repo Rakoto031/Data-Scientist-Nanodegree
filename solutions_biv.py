@@ -109,7 +109,7 @@ def categorical_solution_1():
 
     # data setup
     fuel_econ = pd.read_csv('./data/fuel_econ.csv')
-    
+
     sedan_classes = ['Minicompact Cars', 'Subcompact Cars', 'Compact Cars', 'Midsize Cars', 'Large Cars']
     pd_ver = pd.__version__.split(".")
     if (int(pd_ver[0]) > 0) or (int(pd_ver[1]) >= 21): # v0.21 or later
@@ -146,7 +146,7 @@ def additionalplot_solution_1():
 
     # data setup
     fuel_econ = pd.read_csv('./data/fuel_econ.csv')
-    
+
     THRESHOLD = 80
     make_frequency = fuel_econ['make'].value_counts()
     idx = np.sum(make_frequency > THRESHOLD)
@@ -178,7 +178,7 @@ def additionalplot_solution_2():
 
     # data setup
     fuel_econ = pd.read_csv('./data/fuel_econ.csv')
-    
+
     THRESHOLD = 80
     make_frequency = fuel_econ['make'].value_counts()
     idx = np.sum(make_frequency > THRESHOLD)
