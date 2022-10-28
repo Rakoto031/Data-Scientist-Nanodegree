@@ -116,7 +116,7 @@ def scales_solution_2():
 
     bins = 10 ** np.arange(-1, 3.0+0.1, 0.1)
     ticks = [0.1, 0.3, 1, 3, 10, 30, 100, 300, 1000]
-    labels = ['{}'.format(val) for val in ticks]
+    labels = [f'{val}' for val in ticks]
 
     plt.hist(data = pokemon, x = 'weight', bins = bins)
     plt.xscale('log')
